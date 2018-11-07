@@ -19,12 +19,16 @@
 *.iml
 out/
 
-#Serenity
+#Serenity-BDD
 target/
 build/
 
 #gradle
-.gradle/
+/.gradle/
+/gradle/
+/build/
+gradlew.bat
+gradlew
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -40,3 +44,7 @@ gradle/wrapper/gradle-wrapper.properties
 
 #Sonar
 sonar-project.properties
+
+# Eclipse
+.classpath
+.project
