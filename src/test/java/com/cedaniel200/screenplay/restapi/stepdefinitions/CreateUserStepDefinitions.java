@@ -13,6 +13,7 @@ import net.serenitybdd.screenplay.rest.abiities.CallAnApi;
 
 import static com.cedaniel200.screenplay.restapi.model.builder.UserBuilder.withName;
 import static com.cedaniel200.screenplay.restapi.task.CreateUser.createUser;
+import static com.cedaniel200.screenplay.restapi.util.Service.BASE_URL;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
@@ -24,7 +25,7 @@ public class CreateUserStepDefinitions {
     @Before
     public void prepareStage(){
         OnStage.setTheStage(new OnlineCast());
-        theActorCalled(CESAR).whoCan(CallAnApi.at("https://reqres.in/api"));
+        theActorCalled(CESAR).whoCan(CallAnApi.at(BASE_URL.toString()));
     }
 
     @When("^you create an user$")
@@ -35,9 +36,6 @@ public class CreateUserStepDefinitions {
                 .andJob("Java Developer")
                 )
         );
-
-        User user = SerenityRest.lastResponse().body().as(User.class);
-        System.out.print(user.getId());
     }
 
     @Then("^I should see the user created$")

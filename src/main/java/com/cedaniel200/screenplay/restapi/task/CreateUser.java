@@ -5,6 +5,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Post;
 
+import static com.cedaniel200.screenplay.restapi.util.Service.CREATE_USER;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class CreateUser implements Task {
@@ -17,7 +18,8 @@ public class CreateUser implements Task {
     @Override
     public <T extends Actor> void performAs(T theActor) {
         theActor.attemptsTo(
-                Post.to("/users").with(request -> request.header("Content-Type", "application/json")
+                Post.to(CREATE_USER.toString())
+                        .with(request -> request.header("Content-Type", "application/json")
                         .body(user)
                 )
         );
