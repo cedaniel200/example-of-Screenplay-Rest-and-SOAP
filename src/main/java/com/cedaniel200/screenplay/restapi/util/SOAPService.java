@@ -1,14 +1,12 @@
 package com.cedaniel200.screenplay.restapi.util;
 
-public enum Service {
-
-    BASE_URL("https://reqres.in/api"),
-    CREATE_USER("/users"),
-    CONSULT_USERS("/users?page=%d");
+public enum SOAPService {
+    BASE_URL("http://www.thomas-bayer.com/axis2/services"),
+    CONSULT_BANK("/BLZService");
 
     private String uri;
 
-    Service(String uri) {
+    SOAPService(String uri) {
         this.uri = uri;
     }
 

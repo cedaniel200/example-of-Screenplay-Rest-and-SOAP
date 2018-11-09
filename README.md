@@ -1,5 +1,8 @@
-# rest-api-screenplay
-Project where the used of the serenity screenplay pattern with cucumber and gradle for testing rest API. For this automation the services exposed by <https://www.reqres.in/> are used.
+# Example of Screenplay-rest
+## Consuming a SOAP and Rest web service with Screenplay-rest
+Project where the used of the serenity screenplay pattern with cucumber and gradle for testing rest API and SOAP API. 
+
+For this automation the services exposed by <https://www.reqres.in/> (Rest) and <http://www.thomas-bayer.com/axis2/services/BLZService?wsdl/> (SOAP) are used.
 
 The application was built with the following tools and languages:
 
@@ -18,5 +21,5 @@ gradle clean build -x test
 
 To run the tests and generate the report of serenity bdd
 ```
-gradle clean test aggregate
+gradle test aggregate
 ```

@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Post;
 
-import static com.cedaniel200.screenplay.restapi.util.Service.CREATE_USER;
+import static com.cedaniel200.screenplay.restapi.util.RestService.CREATE_USER;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class CreateUser implements Task {

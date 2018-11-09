@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 import static cucumber.api.SnippetType.CAMELCASE;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = {"src/test/resources/features/consult_users.feature"},
-        glue = {"com.cedaniel200.screenplay.restapi.stepdefinitions"},
+@CucumberOptions(features = {"src/test/resources/features/rest/consult_users.feature"},
+        glue = {"com.cedaniel200.screenplay.restapi.stepdefinitions.rest"},
         snippets = CAMELCASE)
 public class ConsultUsers {
 }
