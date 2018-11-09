@@ -1,6 +1,5 @@
 package com.cedaniel200.screenplay.restapi.stepdefinitions;
 
-import com.cedaniel200.screenplay.restapi.model.SummaryUsers;
 import com.cedaniel200.screenplay.restapi.questions.LastResponseStatusCode;
 import com.cedaniel200.screenplay.restapi.questions.TheUsersOnTheWeb;
 import com.cedaniel200.screenplay.restapi.task.ConsultTheUsers;
@@ -8,7 +7,6 @@ import com.cedaniel200.screenplay.restapi.userinterfaces.ReqresPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
