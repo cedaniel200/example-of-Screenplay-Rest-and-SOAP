@@ -11,7 +11,7 @@ The application was built with the following tools and languages:
 
 To clone the repository:
 ```
-git clone https://github.com/cedaniel200/rest-api-screenplay.git
+git clone https://github.com/cedaniel200/example-of-Screenplay-Rest-and-SOAP.git
 ```
 
 To compile
