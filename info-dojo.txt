@@ -1,0 +1,26 @@
+--------------
+CONSULT BANK - POST
+--------------
+
+"Content-Type" =  "application/soap+xml;charset=UTF-8"
+"Accept-Encoding" = "gzip,deflate"
+
+"<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:blz=\"http://thomas-bayer.com/blz/\">\n" +
+"   <soap:Header/>\n" +
+"   <soap:Body>\n" +
+"      <blz:getBank>\n" +
+"         <blz:blz>" + code + "</blz:blz>\n" +
+"      </blz:getBank>\n" +
+"   </soap:Body>\n" +
+"</soap:Envelope>\n"
+
+
+--------------
+CREATE USER - POST
+--------------
+"Content-Type", "application/json"
+
+
+--------------
+CONSULT USERS - GET
+--------------
