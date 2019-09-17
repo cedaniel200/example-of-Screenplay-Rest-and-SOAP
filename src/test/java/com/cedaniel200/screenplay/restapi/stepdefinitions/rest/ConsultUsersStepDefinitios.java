@@ -7,7 +7,9 @@ import com.cedaniel200.screenplay.restapi.userinterfaces.ReqresPage;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.actions.Open;
+import net.serenitybdd.screenplay.actions.Scroll;
 
+import static com.cedaniel200.screenplay.restapi.userinterfaces.ReqresPage.USERS_IN_JSON_FORMAT;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
@@ -19,7 +21,8 @@ public class ConsultUsersStepDefinitios {
     public void consultingTheSecondGroupOfThreeUsers() throws Exception {
         theActorInTheSpotlight().attemptsTo(
                 ConsultTheUsers.ofTheSecondGroup(),
-                Open.browserOn(reqresPage)
+                Open.browserOn(reqresPage),
+                Scroll.to(USERS_IN_JSON_FORMAT)
         );
 
     }
