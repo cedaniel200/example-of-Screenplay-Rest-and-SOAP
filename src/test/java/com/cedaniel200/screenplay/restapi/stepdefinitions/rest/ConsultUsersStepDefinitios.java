@@ -29,7 +29,8 @@ public class ConsultUsersStepDefinitios {
 
     @Then("^I should see the users$")
     public void iShouldSeeTheUsers() throws Exception {
-        theActorInTheSpotlight().should(seeThat("last response status code is 200" , LastResponseStatusCode.is(200)));
+        theActorInTheSpotlight().should(seeThat("last response status code is 200",
+                LastResponseStatusCode.is(200)));
         theActorInTheSpotlight().should(seeThat(TheUsersOnTheWeb.correspondToThoseOfTheService()));
     }
 

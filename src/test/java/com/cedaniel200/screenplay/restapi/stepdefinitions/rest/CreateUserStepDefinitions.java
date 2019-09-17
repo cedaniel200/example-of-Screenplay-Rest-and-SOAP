@@ -23,7 +23,8 @@ public class CreateUserStepDefinitions {
 
     @Then("^I should see the user created$")
     public void iShouldSeeTheUserCreated() throws Exception {
-        theActorInTheSpotlight().should(seeThat("last response status code is 201" , LastResponseStatusCode.is(201)));
+        theActorInTheSpotlight().should(seeThat("last response status code is 201",
+                LastResponseStatusCode.is(201)));
     }
 
 }

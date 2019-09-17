@@ -18,19 +18,7 @@ public class ConsultBank implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Post.to(CONSULT_BANK.toString())
-                        .with(request -> request
-                                .header("Content-Type", "application/soap+xml;charset=UTF-8")
-                                .header("Accept-Encoding", "gzip,deflate")
-                                .body("<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:blz=\"http://thomas-bayer.com/blz/\">\n" +
-                                        "   <soap:Header/>\n" +
-                                        "   <soap:Body>\n" +
-                                        "      <blz:getBank>\n" +
-                                        "         <blz:blz>" + code + "</blz:blz>\n" +
-                                        "      </blz:getBank>\n" +
-                                        "   </soap:Body>\n" +
-                                        "</soap:Envelope>\n")
-                        )
+
         );
     }
 

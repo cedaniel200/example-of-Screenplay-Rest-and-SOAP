@@ -33,7 +33,8 @@ public class ConsultBankStepDefinitions {
 
     @Then("^you should see the bank's information$")
     public void youShouldSeeTheBankSInformation() throws Exception {
-        theActorInTheSpotlight().should(seeThat("last response status code is 200", LastResponseStatusCode.is(200)));
+        theActorInTheSpotlight().should(seeThat("last response status code is 200",
+                LastResponseStatusCode.is(200)));
     }
 
 }

@@ -9,6 +9,6 @@ import static cucumber.api.SnippetType.CAMELCASE;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = {"src/test/resources/features/rest/create_user.feature"},
         glue = {"com.cedaniel200.screenplay.restapi.stepdefinitions.rest"},
-                snippets = CAMELCASE)
+        snippets = CAMELCASE)
 public class CreateUser {
 }
